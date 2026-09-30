@@ -8,12 +8,14 @@ from ..util import *
 
 
 class ImageIOSource(intake.source.base.DataSource):
-    """Intake source using imageio as backend.
+    """
+    """
+    Intake source using imageio as backend.
 
     Attributes:
         uri (str): URI (e.g. file system path or URL)
     """
-
+    """
     container = "ndarray"
     name = "imageio"
     version = "0.0.1"
@@ -21,9 +23,11 @@ class ImageIOSource(intake.source.base.DataSource):
 
     def __init__(self, uri: str, metadata: Optional[dict] = None):
         """
+        """
         Arguments:
             uri (str): URI (e.g. file system path or URL)
             metadata (dict, optional): Extra metadata, handed over to intake
+        """
         """
         super().__init__(metadata=metadata)
         self.uri = uri
