@@ -1,3 +1,4 @@
+"""
 import numpy as np
 import bioformats
 import xmltodict
@@ -119,3 +120,4 @@ class BioformatsSource(ImageSource):
 
     def _close(self):
         pass
+"""
