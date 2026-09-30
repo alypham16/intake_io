@@ -16,13 +16,11 @@ build:
 
 requirements:
   run:
-    - bioformats
     - dask
     - h5py
     - imageio
     - intake
     - intake-xarray
-    - javabridge
     - mrcfile
     - natsort
     - nibabel
@@ -39,4 +37,3 @@ requirements:
       - flywheel-sdk
       - imagecodecs
       - pynrrd
-      - python-bioformats
