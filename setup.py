@@ -12,7 +12,7 @@ setup(
     packages=find_packages(exclude=("tests*", "docs*")),
     install_requires=[
         "aiohttp",
-        "bioformats",
+        # "bioformats",
         "dask",
         "imageio",
         "intake",
@@ -43,7 +43,7 @@ setup(
     entry_points={
         "intakedrivers": [
             "auto = intake_io.source.AutoSource",
-            "bioformats = intake_io.source.BioformatsSource",
+            # "bioformats = intake_io.source.BioformatsSource",
             "dicom = intake_io.source.DicomSource",
             "dicomzip = intake_io.source.DicomZipSource",
             "directory = intake_io.source.DirSource",
