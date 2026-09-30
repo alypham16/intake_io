@@ -4,7 +4,7 @@ from .auto import AutoSource
 from .dicom import DicomSource, DicomZipSource
 from .directory import DirSource
 from .filepattern import FilePatternSource
-from .imageio import ImageIOSource
+# from .imageio import ImageIOSource
 from .list import ListSource
 from .nifti import NiftiSource
 from .nrrd import NrrdSource
