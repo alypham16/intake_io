@@ -1,8 +1,9 @@
+"""
 import numpy as np
 import imageio
 import intake
 from typing import Any, Optional
-from .bioformats import BioformatsSource
+# from .bioformats import BioformatsSource
 from ..util import *
 
 
@@ -121,3 +122,4 @@ def save_tif(image: Any, uri: str, compress: bool):
         if compress:
             writer.set_meta_data(dict(compress=4))
         writer.append_data(to_numpy(image))
+"""
