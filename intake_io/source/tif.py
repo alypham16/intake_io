@@ -4,7 +4,7 @@ import numpy as np
 import tifffile
 
 from .base import ImageSource, Schema
-from .bioformats import _parse_ome_metadata
+# from .bioformats import _parse_ome_metadata
 from ..util import get_axes, get_spacing, get_spacing_units, partition_gen
 
 
@@ -51,7 +51,7 @@ class TifSource(ImageSource):
                 metadata = getattr(self._file, f"{flag}_metadata", None)
                 if metadata is not None:
                     fileheader[flag] = metadata
-
+"""
         if "ome" in fileheader:
             ome = _parse_ome_metadata(fileheader["ome"])
             shape = self._set_shape_metadata(ome["axes"], ome["shape"], ome["spacing"], ome["spacing_units"],
@@ -63,7 +63,7 @@ class TifSource(ImageSource):
                 npartitions=sum(len(i) for i in self._file.series),
                 chunks=None
             )
-
+"""
         series = self._file.series[0]
         axes = series.axes.lower()
         axes = axes.replace("q", "c").replace("s", "c")
